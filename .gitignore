@@ -3,3 +3,6 @@
 **/.vs/
 **/dist/
 **/.idea
+public/img
+*.jpg
+*.jpeg
