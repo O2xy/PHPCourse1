@@ -5,7 +5,7 @@ require ENGINE_DIR . "db.php";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $login = post('login');
-    $password = hash(post('password'));
+    $password = hashPass(post('password'));
 
     $sql = "SELECT * FROM users 
             WHERE login = '{$login}' 

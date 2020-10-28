@@ -17,6 +17,6 @@ function redirect(string $url) {
     header("Location: {$url}");
 }
 
-function hash(string $string) {
+function hashPass(string $string) {
     return md5($string . 'd5f8');
 }
