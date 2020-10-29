@@ -14,7 +14,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if($user = queryOne($sql)) {
         session_start();
         $_SESSION['user_id'] = $user['id'];
-        redirect('/');
+       // redirect('/');
+        redirect("/personal.php?id={$user['id']}");
     } else {
         echo "Не авторизованы!";
     }
